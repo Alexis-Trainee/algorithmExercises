@@ -1,0 +1,16 @@
+retornar a soma dos elementos do array ar.
+
+entrada:
+receber um array de tamanho n chamado ar
+
+inicialização:
+inicializar uma variável do tipo inteiro chamada acumuladora com o valor de zero;
+
+processamento:
+percorrer o elementos do array;
+para cada elemento encontrado incrementar o valor a variável acumuladora
+ 
+saída:
+retornar a variável acumuladora;
+
+

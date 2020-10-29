@@ -1,0 +1,14 @@
+entrada: 
+receber dois arrays chamados  a e b
+inicializacão:
+iniciar uma variável do tipo inteiro chamada ana com o valor zero;
+iniciar uma variável do tipo inteiro chamada bob com o valor zero;
+processamento:
+percorrer o array a
+para cada elemento em a achar seu correspondente no array b
+comparar o valor dos elementos correspondentes de a e b
+caso o valor do elemento em a seja maior que o valor correspondente em b incrementar em um o valor de ana
+caso o valor do elemento em a seja menor que o valor correspondente em b incrementar em um o valor de bob
+
+saída:
+retornar um array onde o primeiro elemento é o valor de ana e o segundo elemento é o valor de bob

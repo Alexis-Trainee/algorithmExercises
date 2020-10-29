@@ -1,0 +1,10 @@
+
+Neste desafio, você deve calcular e imprimir a soma dos elementos em um array, tendo em mente que alguns desses inteiros podem ser muito grandes.
+
+Descrição da função
+
+Conclua a função aVeryBigSum no editor abaixo. Ele deve retornar a soma de todos os elementos da matriz.
+
+aVeryBigSum tem o (s) seguinte (s) parâmetro (s):
+
+int ar [n] : uma matriz de inteiros.

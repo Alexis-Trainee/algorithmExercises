@@ -1,0 +1,15 @@
+problema:
+
+Neste desafio, você deve calcular e imprimir a soma dos elementos em um array, tendo em mente que alguns desses inteiros podem ser muito grandes.
+
+
+
+entrada:
+receber um array de tamanho n chamado ar
+inicialização:
+iniciar uma variável do tipo inteiro de nome acumuladora com valor inícial zero;
+processamento:
+percorrer o array;
+para cada elemento encontrado no array incrementar o valor a variável acumuladora;
+saída:
+retornar a variável acumuladora;
