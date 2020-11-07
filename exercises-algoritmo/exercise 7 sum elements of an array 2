@@ -1,0 +1,46 @@
+
+Raciocínio:
+	* percorrer o array arr e realizar a soma dos elementos deste array:
+	*salvar o valor da soma em uma variável do tipo inteira chamada acumuladora;
+	* apos a soma destes elementos subtrair este total contido em uma variável acumuladora do valor contido em cada índice do 			primeiro ao ultimo;
+	* imprimir na tela o valor restante da subtração da variável acumuladora pelo índice da vez;
+	* imprimir na tela o valor resultante da subtração do ultimo índice pela variável acumuladora.
+		
+		
+		
+entrada: 
+
+receber o array do tipo inteiro chamado arr;
+
+início:
+iniciar uma variável do tipo inteiro de nome acc com zero.	
+inicia uma variável do tipo inteiro chamada de lastIndex com  valor inicial de arr.length-1;
+
+
+
+
+processamento:
+PASSo 1:
+	*percorrer o array arr;
+	*para cada interação armazenar o valor encontrado na variável acc;
+	
+PASSO 2:	
+	*Diminuir o valor da variável acc pelo valor do indice de cada índice do array arr;
+	*Diminuir o valor da variável acc pelo valor do indice final;
+
+saída:
+	* imprimir na tela o valor restante da subtração da variável acumuladora pelo índice da vez;
+	* imprimir na tela o valor resultante da subtração do ultimo índice pela variável acumuladora.
+
+
+let acc= 0;
+let firstIndex = arr[0];
+let lastIndex = arr[arr.length-1];
+let secondIndex = arr[2];
+for (let i=0; i<arr.length; i++) {
+    acc = acc+arr[i];
+}
+let y = acc-lastIndex;
+let x = acc-firstIndex;
+console.log(y, x)
+

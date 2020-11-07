@@ -1,0 +1,87 @@
+entrada:
+receber o array do tipo inteiro de tamanho [n] chamado arr;
+
+inicialização:
+
+
+processamento:
+
+
+saída:
+
+
+
+
+
+//raciocínio:
+um número é positivo quando é maior qu zero.
+um número é negativo quando menor que zero.
+o array arr = N;
+----------------------------------------ALGORITMO--------------------------------------------------------------------------
+
+ENTRADA: Receber o array de tamanho [n] do tipo inteiro chamado arr;
+
+início:
+* Definir variáveis do tipo inteiro denominados x, y, z e iniciar cada uma com zero.
+* Definir uma variável do tipo inteiro chamada resultX que receberá a divisão de x por arr.length e iniciá-la com zero;
+* Definir uma variável do tipo inteiro chamada resultY que receberá a divisão de y por arr.length e iniciá-la com zero;
+* Definir uma variável do tipo inteiro chamada resultZ que receberá a divisão de z por arr.length e iniciá-la com zero;
+
+PROCESSAMENTO:
+
+1 passo: percorrer a matriz arr de tamanho [n];
+
+2 passo: 
+	*se um número maior que zero for encontrado na matriz arr, fazer a incrementação em +1 na variável x;
+	*se um número menor que zero for encontrado na matriz arr, fazer a incrementação em +1 na variável y;
+	*se um número igual a zero for encontrado na matriz arr, fazer a incrementação em +1 na variável z;
+	
+3 passo: 
+	*A variável resultX recebe x dividido pela matriz arr.length;
+	*A variável resultY recebe y dividido pela matriz arr.length;
+	*A variável resultZ recebe z dividido pela matriz arr.length;
+
+4 passo:
+	*Definir uma variável do tipo ponto flutuante denominada roundX que receberá resultX e limitara a quantitade de casas decimais a esquerda
+	*Definir uma variável do tipo ponto flutuante denominada roundY que receberá resultY e limitara a quantitade de casas decimais a esquerda
+	*Definir uma variável do tipo ponto flutuante denominada roundZ que receberá resultZ e limitara a quantitade de casas decimais a esquerda;
+	 
+SAÍDA:	
+5 passo:
+	*retornar [ roundX, roundY, roundZ]; //return só lê o primeiro então se eu quiser retornar todos os resultados renho que fazer um return na forma de array neste caso o arrayé anônimo mas, se eu quizer nomeá-lo então precisa declarár uma variável com um array vázio antes.
+	
+ 
+ 
+ 
+ ====================================RESOLUÇÂO===================================
+let x=0;
+let y=0;
+let z=0;
+let resultX=0;
+let resultY=0;
+let resultZ=0;
+
+    for(let i=0; i<arr.length; i++) {
+        
+        if(arr[i]>0) {
+            x++;
+        }
+            else if(arr[i]<0) {
+                y++;
+            }
+                else if(arr[i]===0) {
+                    z++;
+                }
+    }
+    resultX = x/arr.length;
+    resultY = y/arr.length;
+    resultZ = z/arr.length;
+
+let roundX = parseFloat(resultX.toFixed(6));
+let roundY = parseFloat(resultY.toFixed(6));
+let roundZ = parseFloat(resultZ.toFixed(6));
+
+    console.log (roundX);
+    console.log (roundY);
+    console.log (roundZ);//Foi utilizado console.log() porque era o que a questo pedía. 
+ 

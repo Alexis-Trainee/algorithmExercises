@@ -1,0 +1,65 @@
+problema: jogo da velha.
+
+o jogo utiliza como simbolos x e o;
+
+quais são os resultados possíveis do jogo: 
+
+	*se um dos símbolos completar uma coluna inteira exemplo se X completar uma coluna  X será o vencedor;
+	*se um dos símbolos completar uma linha inteira exemplo se X completar uma linha  X será o vencedor;
+	*se um dos símbolos completar uma diagonal inteira exemplo se X completar uma diagonal inteira X será o ganhador;
+	*se nenhum dos simbolos completar uma diagonal, linha ou coluna inteira o jogo termina empatado;
+	*se um dos simbolos completar mais de uma linha, coluna ou diagonal o jogo terminará empatado; 
+Raciocínio:
+
+1-Deverá ser criado situações em que serão testados todos os casos possíveis descritos à cima no problema;
+2-Se uma das condições for satisfeita deverá retornar como verdadeiro, se não retornar um valor falso;
+3-Para facilitar com base em um exemplo ja mostrado criaremos situações para cada teste onde uma matriz simulará as condições para 		que ocorra vitoria ou empate ou seja verdadeiro e falso.
+4-Sera necessário a criação de diversas matrizes contendo diversos resultados um para cada caso.
+5-Chamaremos os casos de teste de linhas, teste de colunas, teste de diagonais.
+
+O resultado de cada teste deve retornar na tela.
+
+uma matriz cpara comparação deverá ser criada.
+
+
+-------------------------------------------------------------TESTES------------------------------------------------------------------
+>>Elaboração do algoritmo:<<
+
+	*teste de linhas!
+entrada:
+receber matriz 
+início:
+
+
+processamento:
+	*percorrer a matriz na busca por elementos iguais;
+	*se não houver linha com elementos iguas retornar (empate);
+	*se houver mais de uma linha com elementos iguais retornar (invalido);
+	*se houver apenas uma linha com elementos iguais retornar o vencedor se é X ou O.
+
+saída:
+	*EMPATE;
+	*INVALIDO;
+	*VENCEDOR X ou VENCEDOR O;
+	
+	
+	
+	
+	Encontrar elementos iguauis na diagonal;
+	
+	entrada:
+	receber a matriz quadrada de tamanho n chamada arr do tipo arr 
+	
+	inicio:
+
+		processamento:
+		declarar uma variavel chamada diagonal1 que percorrerá os índices indicados [0,0], [1,1] , [2,2];
+		verificar se os elementos presentes nestes indices são iguais;
+		caso sejam iguais 
+
+	percorrer a matriz na busca por elementos iguais;
+	
+	 
+	
+	
+	saída:

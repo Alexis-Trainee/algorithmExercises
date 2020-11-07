@@ -1,0 +1,88 @@
+Problema:
+
+Escrever um programa que escreva uma escada de tamanho n. A escada é alinhada à direita, composta de # e espaços e tem uma altura e largura de n=6.
+
+formato da entrada: Um único número inteiro, n, denotando o tamanho da escada.
+
+RACIOCÍNIO:
+Criar uma matriz vazia que receberá um número do tipo inteiro. Este número será responsável por dizer a matriz a quantidade de linhas e colunas ela vererá ter.
+
+quem de fato define as linhas e colunas são os simbolos? TALVEZ!!!
+ 
+6=[''] = [   0  1  2  3  4  5
+		0['','','','','','']
+		
+		1['','','','','','']
+		
+		2['','','','','','']
+		
+		3['','','','','','']
+		
+		4['','','','','','']
+		
+		5['','','','','','']
+		];
+		
+INÍCIO:
+
+Passo 1
+*iniciar uma matriz vazia chamada arr;
+*iniciar uma função de nome exibirNumero que receberá um parâmetro chamado entrada ;
+
+PROCESSAMENTO:
+Passo 2
+* dado a entrada recebida pela função ela  vai adicionar a quantidade de espaços '' e '#' necessários na matriz arr;
+*quando a matriz  arr for igual a entrata recebida o laço se encerrará.
+
+
+SAÍDA:
+Passo 3
+*Imprimir na tela os elementos da matriz array.
+
+------------------------------------------------Resolução-1-Deu-erro----------------------------------------------------------------
+início:
+let arr=[];
+let limitX = 6;
+let simbol = '#';
+arr.length = limitX;
+
+processamento:
+
+	for(let i, j = arr.length-1; i, j >-1; i--, j-- ) {
+		arr.push('#');
+		};
+		
+		console.log(arr.length);
+
+
+
+
+
+inicio
+iniciar um array vazio chamado arr.
+iniciar uma função de nome recebeNumero que terá um parâmetro do tipo inteiro chamado numero;
+
+processamento:
+
+Dado a entrada do número digitado pelo usuário a função realizará a adição de espaços '' e simbolos"#" necessários a matriz arr;
+Os espaços vazios '' serão adicionados de forma decrescente diminuinto 1 a cada interação 
+Os simbolos "#" serão adicionados de forma crescente almentando 1 a cada interação
+
+saída: 
+imprimir arr
+
+
+
+let arr = [];
+function displayNumber(input) {
+    for (let i =0; i<input; i++) {
+        //vai adicionar '' e concatenar com "#" enquanto i for menor que input;
+        arr.push(" ".repeat(input-i-1) + "#".repeat(i+1))
+    }
+    for (const input of arr) {
+        console.log(input);
+    }
+    //CHAMAR A FUNÇÃO:
+    
+}
+displayNumber(6);

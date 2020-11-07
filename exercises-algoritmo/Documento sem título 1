@@ -1,0 +1,22 @@
+
+
+Um bolo de aniversário tem X quantidade de velas,Sabendo que o bolo possui velas maiores e menores o aniversariante só poderá apagar as velas mais altas problema: verificar a quantidade das velas mais altas e retornar este valor.
+
+entrada:
+
+receber um array de tamanho n chamado candles do tipo inteiro;
+
+início:
+iniciar uma variável contadora com zero.
+
+processamento:
+
+percorrer o array candles verificando seus elementos buscando o de maior valor;
+verificar se a outros de valor igual ao de maior valor;
+retornar um número indicando quantos destes elementos estão presentes neste array;
+
+saída:
+
+ var count = {};
+candles.forEach(function(i) { count[i] = (count[i]||0) + 1;});
+console.log(count);

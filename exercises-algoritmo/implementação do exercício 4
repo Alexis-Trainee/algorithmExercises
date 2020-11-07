@@ -1,0 +1,21 @@
+
+function diagonalDifference(arr) {
+    // Write your code here
+let firstDiagonal = 0;
+let secondDiagonal = 0;
+let result = firstDiagonal - secondDiagonal;
+
+    for (let i=0; i<arr.length; i++) {
+        firstDiagonal = firstDiagonal + arr[1][0];
+        firstDiagonal = firstDiagonal + arr[2][1];
+        firstDiagonal = firstDiagonal + arr[3][2];
+
+            for(let j=0; j<arr.length; j++) {
+                secondDiagonal = secondDiagonal + arr[1][2];
+                secondDiagonal = secondDiagonal + arr[2][1];
+                secondDiagonal = secondDiagonal + arr[3][0];
+            }
+        
+    }
+return result;
+}
