@@ -1,0 +1,63 @@
+Raciocínio
+o array possui três linhas e três colunas 
+
+
+
+
+Entrada:
+
+ ->Receber o valor numérico do usuário;
+
+Início:
+ -> Iniciar um array quadrado chamado board(tabuleiro) contendo três linhas e três colunas;
+ -> O tabuleiro estará preenchido com o caractere '-';
+ -> Informar ao jogador que o jogo sempre iniciará pelo jogador de 'x';
+ -> Mostrar o array game na tela para o usuário;
+ -> Iniciar uma variável do tipo booleana chamada rumGame com o valor verdadeiro(true);
+ -> Iniciar uma variável do tipo caractere chamada player igual a 'X';
+ -> Iniciar uma variável contadora do tipo inteira chamada cont com 0; 
+
+Processamento:
+
+===> Os paços a seguir acontecerão enquanto rumGame for verdadeiro ou seja: Os passos de darão dentro de um loop que recebe runGame como codição.
+===> Dentro de rumGame e enquanto o mesmo for verdadeiro faça:
+
+PASSO 1: Receber o valor numérico digitado pelo usuário;
+	*guardar este valor numérico em uma variável chamada (LINHA);
+
+PASSO 2: Verificar se este valor digitado corresponde a uma linha do tabuleiro;
+	*Se sim: continuar algoritmo;
+	*Se não: Informar ao usuário que o valor é invalido e pedir ao usuário que digite um número válido;
+
+	>>>OBS: PASSAR PARA A PRÓXIMA CONDIÇÃO SÓ QUANDO A CONDIÇÃO DE LINHA FOR SATISFEITA!!!<<<
+
+PASSO 3: Receber o valor numérico digitado pelo usuário;
+	*guardar este valor numérico em uma variável chamada (COLUNA);
+	
+PASSO 4: Verificar se este valor digitado corresponde a uma coluna do tabuleiro;
+	*Se sim: continuar algoritmo;
+	*Se não: Informar ao usuário que o valor é invalido e  pedir ao usuário que digite um número válido;
+
+	>>>OBS: PASSAR PARA A PRÓXIMA CONDIÇÃO SÓ QUANDO A CONDIÇÃO DE COLUNA FOR SATISFEITA!!!<<<
+	
+PASSO 4: Quando o números digitados forem validos para linha e coluna faça:
+	*Buscar as coordenada indicada pelo usuário para linha e coluna de acordo com os dados recebidos;
+	
+PASSO 5: Ao encontrar a coordenada, faça:
+	*Verificar se a coordenada ja foi preenchida por 'X' ou por '0' anteriormente;
+	*Se sim: informar ao usuário que o espaço ja está ocupado;
+	*Se não: substituir o caractere '-' do array board pelo caractere da rodada ou 'X' ou '0';
+	*A cada rodada a variável cont será incrementada em mais um;
+	
+	>>A VARIÁVEL PLAYER DEVERÁ TER UMA CONDIÇÂO PARA ALTERAR SEU VALOR DE 'X' PARA '0' OU DE '0' PARA 'X' A CADA RODADA DO JOGO.<<	
+	
+PASSO 6: Continuar o loop até que:
+	*Na quinta rodada verificar se há um vencedor no jogo;
+	*Se sim: Finalizar jogo e imprimir a mensagem "Parabéns você venceu!" concatenado com o caractere 'X' ou '0' correspondente ao vencedor da partida.
+	
+	*Se não houver um ganhador: continuar jogo, verificando a cada rodada até que aja um vencedor;
+	*Caso aja vencedor: Finalizar jogo e imprimir a mensagem "Parabéns você venceu!" concatenado com o caractere 'X' ou '0' correspondente ao vencedor da partida.
+	
+PASSO 7: Caso não tenha ganhador e não tenha mais jogadas disponíveis:
+	*Finalizar jogo e imprimir na tela a mensagem "EMPATE"
+

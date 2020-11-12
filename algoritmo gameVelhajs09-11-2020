@@ -1,0 +1,39 @@
+Raciocínio
+o array possui três linhas e três colunas preenchidos com números de 1 a 9
+
+
+
+
+entrada:
+
+receber o valor numérico do usuário;
+
+início:
+receber um array chamado game numerado de 1 a 9;
+informar ao jogador que o jogo se iniciará pelo jogador de 'x'
+mostrar o array game na tela para o usuário;
+
+
+processamento:
+receber o valor numérico digitado pelo usuário;
+guardar este valor numérico em uma variável chamada turn;
+percorrer o array game na busca pelo valor igual ao valor digitado;
+caso encotre o valor no array game substituir pelo caractere x ou 0 correspondente ao turno;
+fazer uma dinamica que alterne a vez entre x e 0 em cada turn;
+caso o valor digitado não exista solicitar ao jogador que ele digite um valor valido;
+caso o numero digitado ja tenha sido informado solicitar que o jogador digite outro número;
+
+caso o jogo ja tenha tido cinco jogadas verificar se a um ganhador;
+se não, esperar a proxima jogada e fazer a verificação a cada nova rodada;
+caso exista apenas um ganhador encerrar o jogo indicando vencedor;
+caso não tenha ganhador e não tiver mais jogadas retornar empate.
+ 
+substituir o valor pelo 'x' caso seja o início do jogo contrario substituir pelo caractere correspondente da vez;
+percorrer o array
+localizar a linha e a coluna onde se encontra o número que foi digitado atravéz da sua posição x, y.
+ 
+saída:
+retornar o Vencedor caso aja um;
+ou Empate;
+;
+
